@@ -35,3 +35,11 @@ variable "subnets" {
   type        = list(map(string))
   description = "The list of subnets being created"
 }
+
+variable services {
+  type        = list
+  default     = [
+    "iam.googleapis.com",
+    "compute.googleapis.com"
+  ]
+}

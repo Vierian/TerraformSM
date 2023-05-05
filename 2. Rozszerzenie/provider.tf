@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket  = "tf-backend-bucket-ljedras"
+    bucket  = "tf-backend-bucket-ljedras2"
     prefix  = "terraform/state"
   }
 }

@@ -21,3 +21,12 @@ variable "pubsub" {
   description = "pubsub confiuration"
 }
 
+variable services {
+  type        = list
+  default     = [
+    "iam.googleapis.com",
+    "compute.googleapis.com",
+    "pubsub.googleapis.com"
+  ]
+}
+

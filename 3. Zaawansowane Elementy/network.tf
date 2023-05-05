@@ -3,6 +3,9 @@ resource "google_compute_network" "vpc_network" {
   name                    = "${var.project}-network"
   auto_create_subnetworks = false
   mtu                     = 1460
+  depends_on = [
+    google_project_service.services
+  ]
 }
 
 resource "google_compute_firewall" "default" {

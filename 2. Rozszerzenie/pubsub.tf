@@ -11,8 +11,8 @@ module "pubsub" {
     }
   ]
   depends_on = [
-    google_service_account.default
-    
+    google_service_account.default,
+    google_project_service.services    
   ]
 }
 
